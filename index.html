@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jayrex Acilo | Web Design & Development</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<a href="#"><h1>JayrexAcilo</h1></a>
+      <div id="menu-button">
+              <h4>Menu-button</h4>
+      </div>
+			<nav>
+				<h2>Main Navigation</h2>
+				<ul>
+					<li><a href="#about-nav">About</a></li>
+					<li><a href="#portfolio-scroll">Portfolio</a></li>
+					<li><a href="#contact-scroll">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>
+
+	<div id="main-banner">
+			<h1>
+				Hello!
+			</h1>
+			<hr>
+			<center><p>I'm a Web Developer</p></center>
+	</div>
+<div id="about-nav"></div>
+	<div id="about">
+		<div class="wrapper">
+			<div class="about-col1">
+				<h2>ABOUT</h2>
+				<img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/profile-image.jpg?raw=true" align="middle">
+			</div>
+			<div class="about-col2">
+				<p>My name is Jayrex Acilo. I'm a growing web-developer from Cebu PH who is always seeking to expand my knowledge of everything on the web. I’m always looking for the best way to solve a problem, no matter the time or dedication that it requires. In my world, anything is possible. And if it’s not, I’ll find a way to make it so.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="skills">
+		<div class="wrapper">
+			<h3>Skills</h3>
+			<p>I have a wide range of skills that include design (and working closely
+with designers), front-end development (HTML5, CSS3, Javascript/Jquery,
+ Responsive, UX), back-end development using open source
+technologies,
+deployment and performance tuning (Apache and MySQL).</p>
+		</div>
+    <div id="portfolio-scroll"></div>
+	</div>
+
+<!--  ===== PORTFOLIO ===== -->
+  <div id="portfolio">
+    <div class="wrapper">
+      <h3>Portfolio</h3>
+      <p>I don't have real projects for now but, I have some sample responsive landing page.</p>
+      <div class="sample-works">
+        <ul>
+          <li><a href="http://s.codepen.io/ajayrexluega/debug/dXZjRG" target="_blank">
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/sample-work.JPG?raw=true" alt="" /></a>
+            <p>Design Agency Landing Page </p>
+          </li>
+          <li>
+           <a href="sample-works/sample2/sample2.html" target="_blank">
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/sample-work2.JPG?raw=true" alt="" />
+            </a>
+            <p>Responsive Landing Page </p>
+          </li>
+          <li>
+            <a href="sample-works/sample3/sample3.html" target="_blank">
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/sample-work3.JPG?raw=true" alt="" />
+              </a>
+            <p>Responsive Landing Page </p>
+          </li>
+
+          <li>
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/coming-soon.JPG?raw=true" alt="" />
+            <p>Landing Page </p>
+          </li>
+          <li>
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/coming-soon.JPG?raw=true" alt="" />
+            <p>Landing Page </p>
+          </li>
+          <li>
+            <img src="https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/coming-soon.JPG?raw=true" alt="" />
+            <p>Landing Page </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--  ===== END PORTFOLIO =====  -->
+  <div id="contact-scroll"></div>
+	<div id="contact">
+		<div class="wrapper">
+			<h1>CONTACT</h1>
+			<p>I'm available for freelance contacts, so get in touch:</p>
+			<p class="contact-email">ajayrexluega@gmail.com</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+//  SMOOTH SCROLLING EFFECT
+
+$(function() {
+$('a[href*="#"]:not([href="#"])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	var target = $(this.hash);
+	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	if (target.length) {
+		$('html, body').animate({
+			scrollTop: target.offset().top
+		}, 1000);
+		return false;
+	}
+}
+});
+});
+
+//   END OF SMOOTH SCROLLING EFFECT
+
+//   NAV WILL FIXED TO TOP IF THE SCROLL POSITION IS >= 215
+
+var navOffset = $("nav").offset().top;
+
+$(window).scroll(function(){
+var scrollPos = $(window).scrollTop();
+console.log(scrollPos);
+
+if(scrollPos >= 215){
+
+$('header').addClass('fixed');
+console.log(scrollPos);
+}else if (scrollPos <= 100){
+$('header').removeClass('fixed');
+}
+
+//   NAV WILL FIX TO TOP IF THE SCROLL POSITION IS >= 215
+//   ^^^^^^^^^^^^ END ^^^^^^^^^^^^
+
+
+//   CHANGE TEXT COLOR OF VISITED A LINK
+var bottomPage = $(window).scrollTop() + $(window).height() == $(document).height();
+var about = $('div#about-nav').position();
+var aboutPos = about.top;
+var portfolio = $('div#portfolio-scroll').position();
+var portfolioPos = portfolio.top;
+
+// console.log("The position of about is " + aboutPos);
+// console.log("The position of portolio is " + portfolioPos);
+
+if(scrollPos >= aboutPos && scrollPos < (portfolioPos - 1)){
+	$('header nav ul li a').removeClass();
+	$('header nav ul li a[href="#about-nav"]').addClass('current');
+}else if (scrollPos >= (portfolioPos - 1) && !bottomPage){
+	$('header nav ul li a').removeClass();
+	$('header nav ul li a[href="#portfolio-scroll"]').addClass('current');
+}else if (bottomPage){
+	$('header nav ul li a').removeClass();
+	$('header nav ul li a[href="#contact-scroll"]').addClass('current');
+}else {
+	$('header nav ul li a').removeClass();
+}
+
+//   CHANGE TEXT COLOR OF VISITED A LINK
+//   ^^^^^^^^^^ END ^^^^^^^^^^^^^
+
+});
+
+$('#menu-button').on('click',function(){
+				$('header nav').slideToggle('fast', function(){
+					$(this).toggleClass('showMenu');
+				});
+
+
+			});
+
+});
+
+$(window).resize(function(){
+var maxwidth = $(window).width();
+if(maxwidth <= 530){
+	 $('header nav ul li a').on('click',function(){
+		var go = $('header nav').slideUp('fast', function(){
+					$('header nav').removeClass('showMenu');
+				});
+
+});
+}else if(maxwidth > 530){
+
+	console.log('nope!');
+}
+});
+
+
+	</script>
+
+</body>
+</html>
