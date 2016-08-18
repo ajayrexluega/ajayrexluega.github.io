@@ -96,7 +96,7 @@ header.fixed nav li a.current:hover {
 }
 
 #main-banner{
-	background: url(https://pixabay.com/static/uploads/photo/2016/03/26/13/09/organic-1280537_960_720.jpg) no-repeat;
+	background: url("https://pixabay.com/static/uploads/photo/2016/03/26/13/09/organic-1280537_960_720.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
