@@ -32,10 +32,14 @@ header #menu-button {
   font-weight: 700;
 }
 
+header.fixed ul li a{
+  color: #fff;
+}
+
 header h1{
 	font-family: 'Lobster', cursive;
 	font-weight: normal;
-	color: #4c5180;
+	color: #fff;
 	float: left;
   margin: 10px 0;
 }
@@ -60,7 +64,7 @@ header nav li{
 
 header nav li a{
 	text-decoration: none;
-	color: #4c5180;
+	color: #ccc;
 	transition: color .4s ease-in-out;
 }
 
@@ -68,8 +72,21 @@ header nav li a:hover {
 	color: #fff;
 }
 
+header.fixed nav li a:hover {
+	color: #337ab7;
+  font-weight: 700;
+}
+
+header.fixed nav li a.current:hover {
+	color: #fff;
+  font-weight: 700;
+}
+
 .current {
   color: #fff;
+  background-color: #337ab7;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 #main-banner:before {
@@ -79,7 +96,7 @@ header nav li a:hover {
 }
 
 #main-banner{
-	background: url(https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/banner.jpg?raw=true) no-repeat;
+	background: url(https://pixabay.com/static/uploads/photo/2016/03/26/13/09/organic-1280537_960_720.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,18 +109,18 @@ header nav li a:hover {
 	text-align: center;
 	font-size: 50pt;
 	font-family: 'Courgette', cursive;
-	color: #6C6C9E;
+	color: #fff;
 	margin: 0;
 }
 
 #main-banner hr{
-	width: 60px;
-	 border: 1px solid #B2B2D1;
+	width: 90px;
+	 border: 1px solid #337ab7;
 }
 
 #main-banner p {
 	text-align: center;
-	color: #a1a1d5;
+	color: #fff;
 }
 
 #main-banner .banner-weclome {
@@ -173,7 +190,7 @@ header nav li a:hover {
 }
 #portfolio img {
   width: 100%;
-   height: 282px; 
+  height: 282px;
   border-radius: .3rem;
 }
 #portfolio li:hover {
@@ -189,7 +206,7 @@ header nav li a:hover {
 #contact{
 	margin: 30px 0 0 0;
 	line-height: 30px;
-  background: #474757;
+  background: #337ab7;
   padding: 5%;
 }
 #contact h1, #contact p{
@@ -290,8 +307,9 @@ header nav li a:hover {
 		}
 
 	  header #menu-button h4 {
-	    background: url("https://github.com/ajayrexluega/Portfolio-Landing-Page/blob/master/images/menu.png?raw=true") no-repeat;
+	    background: url("https://github.com/ajayrexluega/business-landing-page/blob/master/images/menu-button.png?raw=true") no-repeat;
 	    text-indent: -10000px;
+
 	  }
 
 	  .showMenu {
