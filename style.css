@@ -1,6 +1,9 @@
 *{
 	font-family: Trebuchet MS;
 }
+html, body {
+	height: 100%;
+}
 body, ul, li{
 	margin: 0;
 	padding: 0;
@@ -102,7 +105,7 @@ header.fixed nav li a.current:hover {
   -o-background-size: cover;
   background-size: cover;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 }
 
 #main-banner h1{
@@ -111,17 +114,22 @@ header.fixed nav li a.current:hover {
 	font-family: 'Courgette', cursive;
 	color: #fff;
 	margin: 0;
-	padding-top: 150px;
+	position: relative;
+  top: 30%;
 }
 
 #main-banner hr{
 	width: 90px;
 	 border: 1px solid #337ab7;
+   position: relative;
+   top: 30%;
 }
 
 #main-banner p {
 	text-align: center;
 	color: #fff;
+  position: relative;
+  top: 30%;
 }
 
 #main-banner .banner-weclome {
@@ -239,6 +247,12 @@ header.fixed nav li a.current:hover {
 
 @media screen and (max-width: 920px){
 
+  /*------------- MAIN BANNER ----------------------*/
+
+  #main-banner h1{
+    font-size: 45pt;
+  }
+
 	#about p{
 	font-size: 15pt;
 	}
@@ -260,6 +274,12 @@ header.fixed nav li a.current:hover {
 }
 
 @media screen and (max-width: 690px) {
+
+  /*------------- MAIN BANNER ----------------------*/
+
+  #main-banner h1{
+    font-size: 40pt;
+  }
 
 	#about .wrapper{
 		display: inline-block;
@@ -342,6 +362,12 @@ header.fixed nav li a.current:hover {
 		header nav ul:not(nth-last-child(2)) {
 			border-bottom: 1px solid #4c5180;
 		}
+
+    /*------------- MAIN BANNER ----------------------*/
+
+    #main-banner h1{
+      font-size: 30pt;
+    }
 
 /*  -----------------  ABOUT ------------------------  */
 
