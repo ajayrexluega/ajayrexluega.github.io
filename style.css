@@ -33,6 +33,7 @@ header #menu-button {
 .fixed {
   position: fixed;
   font-weight: 700;
+  z-index: 100000;
 }
 
 header.fixed ul li a{
