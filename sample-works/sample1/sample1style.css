@@ -1,8 +1,6 @@
 
   *{
     font-family: 'Titillium Web', sans-serif;
-    padding: 0;
-    margin: 0;
   }
 
   .wrapper {
@@ -330,7 +328,7 @@
 
 /* -------------------- SERVICES --------------------- */
 @media screen and (max-width: 830px) {
-
+  
   #services .service_title {
     font-size: 1.2rem;
   }
@@ -341,7 +339,7 @@
       padding: .1REM 1rem;
       font-weight: 700;
   }
-
+  
 /*   -------------- PAST WORK -------------- */
 
   #slider li:nth-child(1) {
@@ -362,11 +360,11 @@
     -moz-transform: scale(.6 ,.6);
     transform: scale(.6 ,.6);
   }
-
+  
   #past_work {
     padding: 1rem 0 17rem 0;
   }
-
+  
   /* - - - - - CONTACT - - - - - */
 
   #contact {
@@ -399,21 +397,21 @@
 }
 
 @media screen and (max-width: 645px) {
-
+  
   header h1 {
     text-align: center;
     display: block;
     width: 100%;
     padding-bottom: 25px;
   }
-
+  
   header nav {
     float: right;
     display: block;
     width: 100%;
     text-align: center;
   }
-
+  
   #banner .content .title {
     font-size: 2rem;
     margin: 0;
@@ -426,8 +424,8 @@
     line-height: 1.75;
     margin: 0 auto 1.7rem auto;
   }
-
-
+  
+  
 /* -------------- SERVICES -----------  */
   #services::after {
     content: '';
@@ -439,7 +437,7 @@
       padding: 14rem 0 3.8rem 0;
       position: relative;
   }
-
+  
 /* -------------- PAST WORKS -------------  */
   #past_work h2.title {
     margin: 0 0 .75rem 0;
@@ -471,11 +469,11 @@
     -moz-transform: scale(.6 ,.6);
     transform: scale(.6 ,.6);
   }
-
+  
   #past_work {
     padding: 1rem 0 20rem 0;
   }
-
+  
 }
 
 @media screen and (max-width: 492px) {
@@ -485,47 +483,47 @@
 }
 
 @media screen and (max-width: 491px) {
-
+  
   header nav a {
     display: list-item;
     list-style: none;
     padding: 10px;
   }
-
+  
   header h1.logo {
     text-align: left;
   }
-
+  
   header div.menu-button h4 {
     background: url("https://github.com/ajayrexluega/business-landing-page/blob/master/images/menu-button.png?raw=true") no-repeat;
     text-indent: -10000px;
     cursor: pointer;
   }
-
+  
   header div.menu-button {
     display: block;
     float: right;
   }
-
+  
   header h1.logo {
     padding: 0;
   }
-
+  
   header .menu-button h4 {
     margin: 0;
     position: absolute;
     top: 37px;
     right: 15px;
   }
-
+  
   header nav {
     display: none;
   }
-
+  
   .showMenu {
     display: block;
   }
-
+  
   #banner .content {
     padding: 2rem 0 10rem 0;
   }
@@ -559,14 +557,14 @@
   #services .wrapper {
     margin-left: 2%;
   }
-
+  
   #services .button {
      padding: 0 1rem;
-
+    
   }
-
-
-
+  
+  
+  
 }
 
 @media screen and (max-width: 395px) {
@@ -577,17 +575,17 @@
     line-height: 1.75;
     margin: 0 auto 2.7rem auto;
   }
-
+  
   .button_wrapper .button_secondary {
     position: absolute;
     left: 29%;
     bottom: 37%;
   }
-
+  
    /* - - - - - CONTACT - - - - - */
 
   #contact .sub_title {
     width: 250px;
   }
-
+  
 }
